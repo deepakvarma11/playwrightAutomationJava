@@ -2,20 +2,31 @@
 <testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12207" started-at="2022-08-06T07:20:37Z" finished-at="2022-08-06T07:20:49Z">
+  <suite name="Default suite" duration-ms="13700" started-at="2022-09-24T17:00:27Z" finished-at="2022-09-24T17:00:40Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="12207" started-at="2022-08-06T07:20:37Z" finished-at="2022-08-06T07:20:49Z">
+    <test name="Default test" duration-ms="13700" started-at="2022-09-24T17:00:27Z" finished-at="2022-09-24T17:00:40Z">
       <class name="com.playwright.test.HomePageTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.playwright.test.HomePageTest@7823a2f9]" name="setup" is-config="true" duration-ms="4482" started-at="2022-08-06T07:20:37Z" finished-at="2022-08-06T07:20:41Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.playwright.test.HomePageTest@ba54932]" name="setup" is-config="true" duration-ms="13" started-at="2022-09-24T17:00:27Z" finished-at="2022-09-24T17:00:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="homePageTitleTest()[pri:0, instance:com.playwright.test.HomePageTest@7823a2f9]" name="homePageTitleTest" duration-ms="3994" started-at="2022-08-06T07:20:41Z" finished-at="2022-08-06T07:20:45Z">
+        <test-method status="PASS" signature="homePageTitleTest()[pri:0, instance:com.playwright.test.HomePageTest@ba54932]" name="homePageTitleTest" duration-ms="10232" started-at="2022-09-24T17:00:27Z" finished-at="2022-09-24T17:00:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePageTitleTest -->
-        <test-method status="PASS" signature="searchItem(java.lang.String)[pri:0, instance:com.playwright.test.HomePageTest@7823a2f9]" name="searchItem" duration-ms="900" started-at="2022-08-06T07:20:45Z" data-provider="doSearchProduct" finished-at="2022-08-06T07:20:46Z">
+        <test-method status="PASS" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:com.playwright.test.HomePageTest@ba54932]" name="captureScreenshot" is-config="true" duration-ms="3" started-at="2022-09-24T17:00:37Z" finished-at="2022-09-24T17:00:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=homePageTitleTest status=SUCCESS method=HomePageTest.homePageTitleTest()[pri:0, instance:com.playwright.test.HomePageTest@ba54932] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenshot -->
+        <test-method status="PASS" signature="searchItem(java.lang.String)[pri:0, instance:com.playwright.test.HomePageTest@ba54932]" name="searchItem" duration-ms="1012" started-at="2022-09-24T17:00:37Z" data-provider="doSearchProduct" finished-at="2022-09-24T17:00:38Z">
           <params>
             <param index="0">
               <value>
@@ -26,7 +37,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchItem -->
-        <test-method status="PASS" signature="searchItem(java.lang.String)[pri:0, instance:com.playwright.test.HomePageTest@7823a2f9]" name="searchItem" duration-ms="931" started-at="2022-08-06T07:20:46Z" data-provider="doSearchProduct" finished-at="2022-08-06T07:20:47Z">
+        <test-method status="PASS" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:com.playwright.test.HomePageTest@ba54932]" name="captureScreenshot" is-config="true" duration-ms="0" started-at="2022-09-24T17:00:38Z" finished-at="2022-09-24T17:00:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searchItem status=SUCCESS method=HomePageTest.searchItem(java.lang.String)[pri:0, instance:com.playwright.test.HomePageTest@ba54932] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenshot -->
+        <test-method status="PASS" signature="searchItem(java.lang.String)[pri:0, instance:com.playwright.test.HomePageTest@ba54932]" name="searchItem" duration-ms="568" started-at="2022-09-24T17:00:38Z" data-provider="doSearchProduct" finished-at="2022-09-24T17:00:39Z">
           <params>
             <param index="0">
               <value>
@@ -37,7 +59,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchItem -->
-        <test-method status="PASS" signature="searchItem(java.lang.String)[pri:0, instance:com.playwright.test.HomePageTest@7823a2f9]" name="searchItem" duration-ms="1208" started-at="2022-08-06T07:20:47Z" data-provider="doSearchProduct" finished-at="2022-08-06T07:20:48Z">
+        <test-method status="PASS" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:com.playwright.test.HomePageTest@ba54932]" name="captureScreenshot" is-config="true" duration-ms="1" started-at="2022-09-24T17:00:39Z" finished-at="2022-09-24T17:00:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searchItem status=SUCCESS method=HomePageTest.searchItem(java.lang.String)[pri:0, instance:com.playwright.test.HomePageTest@ba54932] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenshot -->
+        <test-method status="PASS" signature="searchItem(java.lang.String)[pri:0, instance:com.playwright.test.HomePageTest@ba54932]" name="searchItem" duration-ms="533" started-at="2022-09-24T17:00:39Z" data-provider="doSearchProduct" finished-at="2022-09-24T17:00:39Z">
           <params>
             <param index="0">
               <value>
@@ -48,7 +81,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchItem -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.playwright.test.HomePageTest@7823a2f9]" name="tearDown" is-config="true" duration-ms="657" started-at="2022-08-06T07:20:48Z" finished-at="2022-08-06T07:20:49Z">
+        <test-method status="PASS" signature="captureScreenshot(org.testng.ITestResult)[pri:0, instance:com.playwright.test.HomePageTest@ba54932]" name="captureScreenshot" is-config="true" duration-ms="1" started-at="2022-09-24T17:00:39Z" finished-at="2022-09-24T17:00:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searchItem status=SUCCESS method=HomePageTest.searchItem(java.lang.String)[pri:0, instance:com.playwright.test.HomePageTest@ba54932] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureScreenshot -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.playwright.test.HomePageTest@ba54932]" name="tearDown" is-config="true" duration-ms="1266" started-at="2022-09-24T17:00:39Z" finished-at="2022-09-24T17:00:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

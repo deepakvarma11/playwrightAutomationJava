@@ -3,13 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.playwright.test.EndToEnd">
+      <class name="com.playwright.test.EndToEndTest">
         <methods>
-          <include name="tearDown"/>
+          <include name="captureScreenshot"/>
           <include name="setup"/>
-          <include name="selectIphone"/>
+          <include name="tearDown"/>
+          <include name="searchIphone"/>
         </methods>
-      </class> <!-- com.playwright.test.EndToEnd -->
+      </class> <!-- com.playwright.test.EndToEndTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

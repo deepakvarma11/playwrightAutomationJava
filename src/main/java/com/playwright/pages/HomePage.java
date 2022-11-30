@@ -4,31 +4,32 @@ import com.microsoft.playwright.Page;
 import com.playwright.constants.Constants;
 import com.playwright.pagecomponents.HomePageComponents;
 
-public final class HomePage {
+public final class HomePage extends BasePage {
 
 	private Page page;
 	private HomePageComponents homePageComponents;
 
 	public HomePage(Page page) {
+		super(page);
 		this.page = page;
 		homePageComponents = new HomePageComponents(page);
 	}
-	
+
 	public void navigateToHomePage() {
-		page.navigate(Constants.URL.readProperty().toString());
-		page.waitForLoadState();
+		navigateTo(Constants.URL.readProperty().toString());
+		waitForLoadState();
 	}
 
 	public String getHomePageTitle() {
-		return page.title();
+		return getTitle();
 	}
 
 	public String getHomePageURL() {
-		return page.url();
+		return getUrl();
 	}
 
 	public ResultsPage doSearch(String productName) {
-		homePageComponents.getHeaderBar().doSearch(productName);
+		homePageComponents.getHeaderBarPanel().doSearch(productName);
 		return new ResultsPage(page);
 	}
 

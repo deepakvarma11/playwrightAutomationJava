@@ -4,31 +4,30 @@ import java.util.List;
 
 import com.microsoft.playwright.ElementHandle;
 import com.microsoft.playwright.Page;
-import com.playwright.pagecomponents.HomePageComponents;
 import com.playwright.pagecomponents.SearchResultContainerComponents;
 
-public class ResultsPage {
+public class ResultsPage extends BasePage {
 
 	private Page page;
-	private HomePageComponents homePageComponents;
 	private SearchResultContainerComponents searchResultContainerComponents;
 
 	public ResultsPage(Page page) {
+		super(page);
 		this.page = page;
-		homePageComponents = new HomePageComponents(page);
 		searchResultContainerComponents = new SearchResultContainerComponents(page);
 	}
 
 	public String getSearchHeaderText() {
-		return searchResultContainerComponents.getSearchResultContentComponent().getSearchHeaderText();
+		return searchResultContainerComponents.getSearchResultContentPanel().getSearchHeaderText();
 	}
 
 	public List<ElementHandle> getResultItems() {
-		return searchResultContainerComponents.getSearchResultContentComponent().getResultItems();
+		return searchResultContainerComponents.getSearchResultContentPanel().getResultItems();
 	}
 
-	public void selectProduct(String productName) {
-		searchResultContainerComponents.getSearchResultContentComponent().getSearchResultItemsComponent().selectProduct(productName);
+	public void selectProduct(final String productName) {
+		searchResultContainerComponents
+				.getSearchResultContentPanel().getSearchResultItemsComponent().selectProduct(productName);
 	}
 
 }

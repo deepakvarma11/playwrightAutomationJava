@@ -5,6 +5,8 @@ import static org.testng.Assert.assertEquals;
 import org.assertj.core.api.Assertions;
 import org.testng.annotations.Test;
 
+import com.playwright.base.test.BaseTest;
+
 public class EndToEndTest extends BaseTest {
 
 	@Test(priority = 0)
@@ -16,10 +18,10 @@ public class EndToEndTest extends BaseTest {
 
 	@Test(priority = 1)
 	public void noOfSearchResult() {
-		Assertions.assertThat(resultPage.getResultItems().size()).isEqualTo(1);
+		Assertions.assertThat(resultPage.getResultItems()).hasSize(1);
 	}
 
-	@Test(priority = 2)
+	@Test(priority = 2, dependsOnMethods = { "noOfSearchResult" })
 	public void selectIphone() {
 		resultPage.selectProduct("iPhone");
 	}

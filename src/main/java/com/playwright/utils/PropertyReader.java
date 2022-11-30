@@ -8,14 +8,15 @@ import java.util.Properties;
 public final class PropertyReader {
 	private PropertyReader() {
 	}
-	
-	public static String readProperty(String key) {
 
+	private static final String CONFIG_PATH = "./src/test/resources/config.properties";
+
+	public static String readProperty(String key) {
 		String value = "";
 		Properties property = new Properties();
 		FileInputStream file;
 		try {
-			file = new FileInputStream("./src/test/resources/config.properties");
+			file = new FileInputStream(CONFIG_PATH);
 			property.load(file);
 		} catch (IOException e) {
 			e.printStackTrace();

@@ -1,7 +1,7 @@
 package com.playwright.pagecomponents;
 
 import com.microsoft.playwright.Page;
-import com.playwright.pagecomponent.SearchResultContentComponent;
+import com.playwright.pagecomponentpanels.SearchResultContentPanel;
 
 public class SearchResultContainerComponents {
 
@@ -11,10 +11,10 @@ public class SearchResultContainerComponents {
 		this.page = page;
 	}
 
-	private static String searchResultPanel = "div#product-search.container";
+	private static final String SEARCH_RESULT_PANEL = "div#product-search.container";
 
-	public SearchResultContentComponent getSearchResultContentComponent() {
-		return new SearchResultContentComponent(searchResultPanel, page);
+	public SearchResultContentPanel getSearchResultContentPanel() {
+		return new SearchResultContentPanel(SEARCH_RESULT_PANEL, page);
 	}
 
 }
